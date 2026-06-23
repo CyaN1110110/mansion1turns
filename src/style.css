@@ -1,0 +1,28 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0a0a0a;color:#ccc;font-family:'Segoe UI',sans-serif;min-height:100vh;display:flex;justify-content:center;align-items:center;padding:12px}
+#app{width:460px;min-height:92vh;background:#111;border:1px solid #222;border-radius:12px;display:flex;flex-direction:column;overflow:hidden}
+#header{padding:14px 18px;border-bottom:1px solid #1e1e1e;display:flex;justify-content:space-between;align-items:center}
+#header h1{font-size:1.05em;color:#ff6b6b;letter-spacing:2px}
+#turn-info{font-size:0.78em;color:#666}
+#log-box{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px;min-height:300px}
+.log{font-size:0.86em;line-height:1.7;padding:10px 14px;border-radius:8px;white-space:pre-wrap}
+.log.gm{background:#141424;border-left:3px solid #3a3a6a;color:#bbb}
+.log.player{background:#141e14;border-left:3px solid #3a6a3a;color:#9dcc9d}
+.log.dice{background:#1a1a1a;border-left:3px solid #ffd166;color:#ffd166;text-align:center}
+.log.system{background:#1e1010;border-left:3px solid #ff6b6b;color:#ff9999;text-align:center;font-size:0.8em}
+#action-area{padding:14px;border-top:1px solid #1e1e1e;display:flex;flex-direction:column;gap:8px}
+.setup-block{display:flex;flex-direction:column;gap:8px}
+.setup-block>label{font-size:0.78em;color:#777}
+select,input[type=number]{background:#161616;border:1px solid #2a2a2a;color:#ddd;padding:7px 10px;border-radius:6px;font-size:0.86em;width:100%}
+.stat-row{display:flex;align-items:center;gap:8px}
+.stat-row label{min-width:36px;font-size:0.78em;color:#777}
+.stat-row input{width:70px!important}
+.sum-ok{font-size:0.78em;color:#06d6a0}
+.sum-ng{font-size:0.78em;color:#ff6b6b}
+.murderer-row{display:flex;align-items:center;gap:8px;font-size:0.84em;color:#ff9999;margin:2px 0}
+.murderer-row input{width:auto}
+.act-btn{background:#16213e;border:1px solid #2a3a5a;color:#aac;padding:11px 14px;border-radius:8px;cursor:pointer;font-size:0.86em;text-align:left;transition:background .15s,border-color .15s;width:100%}
+.act-btn:hover:not([disabled]){background:#1e2e4e;border-color:#ffd166;color:#fff}
+.act-btn[disabled]{opacity:.25;cursor:default}
+#start-btn{background:#06d6a0;color:#000;border:none;padding:11px;border-radius:8px;font-weight:bold;cursor:pointer;font-size:0.9em;margin-top:4px;width:100%}
+#start-btn:hover{background:#04b888}
