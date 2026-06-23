@@ -89,7 +89,7 @@ function renderSetup(){
   const sumD=document.createElement('div');
   function refreshSum(){
     const t=sNames.reduce((a,s)=>a+(parseInt(sInputs[s].value)||0),0);
-    sumD.textContent='합계: '+t+' / 15 이하';
+    sumD.textContent='합계: '+t+' / 16 이하';
     sumD.className=t<=15?'sum-ok':'sum-ng';
   }
   sNames.forEach(s=>sInputs[s].addEventListener('input',refreshSum));
@@ -97,7 +97,7 @@ function renderSetup(){
   const startB=document.createElement('button');startB.id='start-btn';startB.textContent='▶ 시작';
   startB.addEventListener('click',()=>{
     const t=sNames.reduce((a,s)=>a+(parseInt(sInputs[s].value)||0),0);
-    if(t>15){log('⚠ 스탯 합계가 15 이하여야 합니다.','system');return;}
+    if(t>16){log('⚠ 스탯 합계가 16 이하여야 합니다.','system');return;}
     S.cls=sel.value;
     S.str=parseInt(sInputs['힘'].value);
     S.dex=parseInt(sInputs['민첩'].value);
